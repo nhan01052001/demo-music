@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nghe nhạc miễn phí</title>
+    <link rel="stylesheet" href="./link/bootstrap/bootstrap.min.css">
+    <script src="./link/query/bootstrap.min.js"></script>
+    <script src="./link/query/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./link/css/musicCSS.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="temp1">
+        <div class="headPhone">
+          <div class="centered back js_img"><img class="js_img2" src="" /></div>
+          <div class="centered face"></div>
+
+          <div class="centered headphones">
+            <div class="centered band"></div>
+            <div class="earmuff"></div>
+            <div class="earmuff"></div>
+          </div>
+
+          <div class="centered music">
+            <div class="group1">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+            <div class="group2">
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ten bai hat -->
+        <div class="playList">
+          <div class="song">
+            <div class="nameMusicAndSinger">
+              <h3 class="title">Ten Bai Hat</h3>
+              <p class="author">Ca si</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- control -->
+        <div class="control">
+          <div class="repeatSong"></div>
+          <div class="backSong">
+            <i class="fast backward icon" style="font-size: 20px"></i>
+            <!-- <button type="button" class="btnBack"><<</button> -->
+          </div>
+          <div class="mainSong">
+            <audio controls id="audio" src=""></audio>
+          </div>
+          <div class="nextSong">
+            <i class="fast forward icon" style="font-size: 20px"></i>
+            <!-- <button type="button" class="btnNext">>></button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="listSong">
+        <div class="nameMusicAndSinger">
+          <h3 class="title">Ten Bai Hat</h3>
+          <p class="author">Ca si</p>
+        </div>
+      </div>
+    </div>
+    <script src="./link/jsMusic.js"></script>
+  </body>
+</html>

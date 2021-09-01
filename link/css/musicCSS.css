@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /* background-image: url(../image/photo-1458560871784-56d23406c091.jfif);
+  background-size: 100% 100%; */
+  background-color: rgb(226, 225, 225);
+}
+
+.centered {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.face {
+  width: 170px;
+  height: 170px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  -webkit-mask: url(https://i.imgur.com/RlyofWb.png) top left / cover;
+  mask: url(https://i.imgur.com/RlyofWb.png) top left / cover;
+}
+
+.back img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.back {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(
+    top,
+    #ff694c 0%,
+    #f15378 40%,
+    #e053d5 50%,
+    #b54beb 60%,
+    #5b86ee 70%,
+    #00eeeb 100%
+  );
+  background: linear-gradient(
+    top,
+    #ff694c 0%,
+    #f15378 30%,
+    #e053d5 40%,
+    #b54beb 60%,
+    #5b86ee 70%,
+    #00eeeb 100%
+  );
+
+  -webkit-filter: saturate(0.5);
+  filter: saturate(0.5);
+  -webkit-transform: scale(1) rotate(-25deg);
+  transform: scale(1) rotate(-25deg);
+  -webkit-animation: spin 0.3s infinite linear alternate;
+  animation: spin 0.3s infinite linear alternate;
+}
+
+.headphones {
+  width: 260px;
+  height: 60px;
+  -webkit-animation: bounce 0.3s linear infinite alternate;
+  animation: bounce 0.3s linear infinite alternate;
+}
+
+.earmuff {
+  float: left;
+  width: 20px;
+  height: 120px;
+  background: #fa7b57;
+  border-radius: 50% 10px 10px 50%;
+  border-right: #fa8e57 solid 20px;
+}
+.earmuff:nth-child(2) {
+  float: right;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.band {
+  width: 260px;
+  height: 240px;
+  border-radius: 100%;
+  background-color: trnasparent;
+  border-top: #fa7b57 solid 20px;
+  z-index: -99;
+}
+
+.music {
+  width: 390px;
+  height: 60px;
+}
+.group1 {
+  float: left;
+}
+.group2 {
+  float: right;
+}
+.wave {
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  opacity: 0.2;
+  margin-top: 40px;
+  background-color: #fa7b57;
+  -webkit-animation: wave 0.3s 0.2s linear infinite alternate;
+  animation: wave 0.3s 0.2s linear infinite alternate;
+}
+.wave:nth-child(2) {
+  -webkit-animation: wave 0.3s 0.1s linear infinite alternate;
+  animation: wave 0.3s 0.1s linear infinite alternate;
+}
+.wave:nth-child(3) {
+  -webkit-animation: wave 0.3s linear infinite alternate;
+  animation: wave 0.3s linear infinite alternate;
+}
+
+@keyframes spin {
+  to {
+    -webkit-filter: saturate(1);
+    -webkit-transform: scale(1.05) rotate(-25deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-filter: saturate(1);
+    -webkit-transform: scale(1.05) rotate(-25deg);
+  }
+}
+
+@keyframes bounce {
+  to {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes wave {
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(2);
+  }
+}
+
+.headPhone {
+  width: 450px;
+  height: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
+
+.temp1 {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.listSong {
+  margin-top: 450px;
+}
+
+.container {
+  width: 465px;
+  height: auto;
+  margin: 0 auto;
+  border-style: ridge;
+  position: relative;
+}
+
+.control {
+  position: relative;
+  display: flex;
+}
+
+.song .nameMusicAndSinger {
+  margin-top: 257px;
+}
+
+.nameMusicAndSinger h3,
+p {
+  text-align: center;
+}
+
+#audio {
+  width: 350px;
+  height: 30px;
+  margin: 40px;
+}
+
+/* .backSong {
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+
+    .nextSong {
+        position: absolute;
+        right: 0;
+        bottom: 47px;
+    }
+
+    .btnBack, .btnNext {
+       border-radius: 10px 10px 10px 10px;
+    }
+
+    .btnBack:hover, .btnNext:hover {
+        background-color: #00EEEB;
+    } */
+
+.backward {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+}
+
+.forward {
+  position: absolute;
+  right: 5px;
+  bottom: 50px;
+}
+.listSong .nameMusicAndSinger {
+  width: 430px;
+  height: 90px;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 6px 14px;
+  border-radius: 5px;
+  box-shadow: 0 3px rgb(44, 44, 44);
+  cursor: pointer;
+}
+
+.nameMusicAndSinger.active {
+    /* background-color:  var(--primary-color); */
+    background-color: rgb(248, 132, 151);
+  }
+
+.nameMusicAndSinger:active {
+  opacity: 1;
+}
